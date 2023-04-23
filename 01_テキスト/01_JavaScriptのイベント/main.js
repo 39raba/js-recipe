@@ -1,9 +1,12 @@
-const inputText = document.getElementById("input-text")
-const inputDate = document.getElementById("input-date")
+//イベントが発生する要素の取得
+const button = document.getElementById("button")
 
-const logValue = function (e) {
-  console.log(e.target.value)
+const alertMessage = function () {
+  alert("クリックしちゃったねえ")
 }
 
-inputText.oninput = logValue
-inputDate.oninput = logValue
+//関数を登録
+button.onclick = alertMessage
+
+//input要素とinputイベント
+const inputText = document.getElementById("input-text")
